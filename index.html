@@ -1,255 +1,435 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Chris Joseph A. Estrante</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
+<header>
+  <div class="logo">CJ<span>.</span></div>
 
-        <h2>MY PORTFOLIO</h2>
-
-        <nav>
-            <a href="#home">HOME</a>
-            <a href="#quiz">QUIZ</a>
-            <a href="#laboratory">LABORATORY</a>
-            <a href="#exam">EXAM</a>
-        </nav>
-
-    </header>
+  </div>
+</header>
 
 
-    <section id="home" class="home">
+<section class="home" id="home">
 
-        <div class="photo">
+  <div class="home-text">
 
-            <img src="./profile.jpg"
-                 alt="Chris Joseph Estrante">
+    <p class="small-title">PERSONAL PORTFOLIO / 2026</p>
 
+    <p class="hello">HELLO, I'M</p>
+
+    <h1>
+      Chris Joseph
+      <span>A. Estrante</span>
+    </h1>
+
+    <div class="line"></div>
+
+    <h4>BSIT 3B</h4>
+
+    <p class="intro">
+     Hi! I'm Chris Joseph A. Estrante, a BSIT 3B student. 
+     This portfolio contains my quizzes, laboratory works, and exam outputs as I continue learning and improving my IT skills.
+    </p>
+
+    <a href="#quiz" class="button">
+      VIEW MY WORKS <span>↗</span>
+    </a>
+
+    <div class="socials">
+
+      <a href="https://www.facebook.com/chris.joseph.anonuevo" target="_blank">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="mailto:chrisjosephestrante@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://github.com/cjaestrante-max" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="black-side">
+
+    <div class="side-title">
+    </div>
+
+
+    <div class="photo-area">
+
+  <div class="photo-shape"></div>
+
+  <img src="images/profile.png"
+  alt="Chris Joseph A. Estrante">
+
+  
+
+</div>
+
+
+    <div class="quick-menu">
+
+      <a href="#quiz">
+
+        <span>01</span>
+
+        <div>
+          <b>QUIZ</b>
+          <small>ACTIVITIES</small>
         </div>
 
+        <strong>↗</strong>
 
-        <div class="intro">
+      </a>
 
-            <p class="red">
-                WELCOME TO MY PORTFOLIO
-            </p>
 
-            <h1>
-                Hi! 
-                Its
-                <span>  Chris Joseph A. </span>
-                <span> Estrante.</span>
-            </h1>
+      <a href="#laboratory">
 
-            <h3>
-                BSIT-3B
-            </h3>
+        <span>02</span>
 
-            <p>
-                I'm Chris Joseph Estrante. Coding is what I love most
-                and one day I hope to discover the different things
-                that I can do with programming.
-            </p>
-
-            <button onclick="aboutMe()">
-                About Me
-            </button>
-
+        <div>
+          <b>LABORATORY</b>
+          <small>WORKS & OUTPUTS</small>
         </div>
 
-    </section>
+        <strong>↗</strong>
+
+      </a>
 
 
-    <section id="quiz">
+      <a href="#exam">
 
-        <h2>
-            MY <span>QUIZZES</span>
-        </h2>
+        <span>03</span>
 
-        <div class="box-container">
-
-            <div class="box">
-
-                <h3>Quiz 1</h3>
-
-                <p>
-                    My first quiz activity.
-                </p>
-
-                <button onclick="showMessage()">
-                    View Quiz
-                </button>
-
-            </div>
-
-
-            <div class="box">
-
-                <h3>Quiz 2</h3>
-
-                <p>
-                    My second quiz activity.
-                </p>
-
-                <button onclick="showMessage()">
-                    View Quiz
-                </button>
-
-            </div>
-
-
-            <div class="box">
-
-                <h3>Quiz 3</h3>
-
-                <p>
-                    My third quiz activity.
-                </p>
-
-                <button onclick="showMessage()">
-                    View Quiz
-                </button>
-
-            </div>
-
+        <div>
+          <b>EXAM</b>
+          <small>PRELIMS / MIDTERM / FINALS</small>
         </div>
 
-    </section>
+        <strong>↗</strong>
+
+      </a>
+
+    </div>
 
 
-    <section id="laboratory">
+    <div class="side-number">
+      
+    </div>
 
-        <h2>
-            MY <span>LABORATORY</span>
-        </h2>
+  </div>
 
-        <div class="box-container">
-
-            <div class="box">
-
-                <h3>Laboratory 1</h3>
-
-                <p>
-                    My first laboratory activity.
-                </p>
-
-                <button onclick="showMessage()">
-                    View Activity
-                </button>
-
-            </div>
+</section>
 
 
-            <div class="box">
+<!-- QUIZ -->
 
-                <h3>Laboratory 2</h3>
+<section class="section" id="quiz">
 
-                <p>
-                    My second laboratory activity.
-                </p>
+  <p class="number"> / ACADEMIC</p>
 
-                <button onclick="showMessage()">
-                    View Activity
-                </button>
+  <h2>My <span>Quiz</span></h2>
 
-            </div>
+  <p class="desc">
+    My quiz activities and assessments.
+  </p>
 
 
-            <div class="box">
+  <div class="cards" id="quizList">
 
-                <h3>Laboratory 3</h3>
+    <div class="add-card"
+    onclick="openForm('quiz')">
 
-                <p>
-                    My third laboratory activity.
-                </p>
+      <div class="plus">+</div>
 
-                <button onclick="showMessage()">
-                    View Activity
-                </button>
+      <h3>ADD QUIZ</h3>
 
-            </div>
+      <p>Add your quiz output here.</p>
 
-        </div>
+    </div>
 
-    </section>
+  </div>
 
-
-    <section id="exam">
-
-        <h2>
-            MY <span>EXAMS</span>
-        </h2>
-
-        <div class="box-container">
-
-            <div class="box">
-
-                <h3>Prelim Exam</h3>
-
-                <p>
-                    My prelim examination activities
-                    and requirements.
-                </p>
-
-                <button onclick="showMessage()">
-                    View Exam
-                </button>
-
-            </div>
+</section>
 
 
-            <div class="box">
+<!-- LABORATORY -->
 
-                <h3>Midterm Exam</h3>
+<section class="section laboratory"
+id="laboratory">
 
-                <p>
-                    My midterm examination activities
-                    and requirements.
-                </p>
+  <p class="number">02 / OUTPUTS</p>
 
-                <button onclick="showMessage()">
-                    View Exam
-                </button>
+  <h2>
+    Laboratory <span>Works</span>
+  </h2>
 
-            </div>
-
-
-            <div class="box">
-
-                <h3>Final Exam</h3>
-
-                <p>
-                    My final examination activities
-                    and requirements.
-                </p>
-
-                <button onclick="showMessage()">
-                    View Exam
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
+  <p class="desc">
+    My laboratory activities and outputs.
+  </p>
 
 
-    <footer>
+  <div class="cards" id="labList">
 
-        <p>
-            © 2026 Chris Joseph Estrante
-        </p>
+    <div class="add-card dark"
+    onclick="openForm('lab')">
 
-    </footer>
+      <div class="plus">+</div>
+
+      <h3>ADD OUTPUT</h3>
+
+      <p>Add your laboratory output here.</p>
+
+    </div>
+
+  </div>
+
+</section>
 
 
+<!-- EXAM -->
 
-    <script src="script.js"></script>
+<section class="section exam" id="exam">
+
+  <p class="number"> / EXAMINATION</p>
+
+  <h2>My <span>Exams</span></h2>
+
+  <p class="desc">
+    My examination outputs.
+  </p>
+
+
+  <div class="exam-list">
+
+
+    <div class="exam-card"
+    onclick="openExam('Prelims')">
+
+      <b>01</b>
+
+      <div>
+
+        <small>FIRST PERIOD</small>
+
+        <h3>PRELIMS</h3>
+
+      </div>
+
+      <strong>→</strong>
+
+    </div>
+
+
+    <div class="exam-card"
+    onclick="openExam('Midterm')">
+
+      <b>02</b>
+
+      <div>
+
+        <small>SECOND PERIOD</small>
+
+        <h3>MIDTERM</h3>
+
+      </div>
+
+      <strong>→</strong>
+
+    </div>
+
+
+    <div class="exam-card"
+    onclick="openExam('Finals')">
+
+      <b>03</b>
+
+      <div>
+
+        <small>FINAL PERIOD</small>
+
+        <h3>FINALS</h3>
+
+      </div>
+
+      <strong>→</strong>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ADD QUIZ / LAB FORM -->
+
+<div class="modal" id="form">
+
+  <div class="form-box">
+
+    <button class="close"
+    onclick="closeForm()">×</button>
+
+    <p id="formType">ADD</p>
+
+    <h2 id="formTitle">
+      Add Output
+    </h2>
+
+
+    <label>Picture (Optional)</label>
+
+    <input
+    type="file"
+    id="picture"
+    accept="image/*">
+
+
+    <label>Title</label>
+
+    <input
+    type="text"
+    id="title"
+    placeholder="Example: Quiz 1">
+
+
+    <label>Description</label>
+
+    <textarea
+    id="description"
+    placeholder="Write something about your output"></textarea>
+
+
+    <button
+    class="add-btn"
+    onclick="addOutput()">
+
+      ADD OUTPUT
+
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- EXAM FORM -->
+
+<div class="modal" id="examForm">
+
+  <div class="form-box exam-box">
+
+    <button class="close"
+    onclick="closeExam()">×</button>
+
+    <p>EXAMINATION</p>
+
+    <h2 id="examTitle">
+      PRELIMS
+    </h2>
+
+
+    <div id="examList"></div>
+
+
+    <button
+    class="add-btn"
+    onclick="addExam()">
+
+      + ADD EXAM OUTPUT
+
+    </button>
+
+
+    <input
+    type="file"
+    id="examPicture"
+    accept="image/*"
+    hidden>
+
+  </div>
+
+</div>
+
+
+<!-- BIG IMAGE -->
+
+<div class="image-viewer"
+id="imageViewer"
+onclick="closeImage()">
+
+  <button
+  class="viewer-close"
+  onclick="closeImage()">
+    ×
+  </button>
+
+  <img
+  id="bigImage"
+  src=""
+  alt="Full Output">
+
+</div>
+
+
+<footer>
+
+  <div>
+
+    <h3>
+      Chris Joseph A. Estrante
+    </h3>
+
+    <p>
+      BSIT 3B | Student Portfolio
+    </p>
+
+  </div>
+
+
+  <div class="footer-socials">
+
+    <a href="https://facebook.com/YOUR_FACEBOOK"
+    target="_blank">
+
+      <i class="fa-brands fa-facebook-f"></i>
+
+    </a>
+
+
+    <a href="mailto:YOUR_EMAIL@gmail.com">
+
+      <i class="fa-solid fa-envelope"></i>
+
+    </a>
+
+
+    <a href="https://github.com/YOUR_GITHUB"
+    target="_blank">
+
+      <i class="fa-brands fa-github"></i>
+
+    </a>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
