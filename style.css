@@ -33,14 +33,18 @@ header {
   color: #777;
 }
 
-.top-name {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+.admin-login {
+  background: transparent;
+  border: 1px solid #777;
+  padding: 8px 14px;
+  font-size: 10px;
+  cursor: pointer;
 }
 
-
+.admin-login:hover {
+  background: #111;
+  color: white;
+}
 
 .home {
   min-height: 100vh;
@@ -50,7 +54,6 @@ header {
   position: relative;
   overflow: hidden;
 }
-
 
 .home-text {
   padding: 120px 8% 70px 12%;
@@ -124,11 +127,6 @@ header {
   font-size: 15px;
 }
 
-.button:hover {
-  background: #444;
-}
-
-
 .socials {
   display: flex;
   gap: 10px;
@@ -151,7 +149,6 @@ header {
   color: white;
 }
 
-
 .black-side {
   background: #111;
   min-height: 100vh;
@@ -159,7 +156,6 @@ header {
   color: white;
   overflow: hidden;
 }
-
 
 .photo-area {
   position: absolute;
@@ -174,16 +170,13 @@ header {
   z-index: 2;
 }
 
-
 .photo-shape {
   position: absolute;
   width: 72%;
   height: 88%;
   background: #222;
   transform: rotate(5deg);
-  z-index: 0;
 }
-
 
 .photo-shape::before {
   content: "";
@@ -195,47 +188,13 @@ header {
   top: -12px;
 }
 
-
 .photo-area img {
   width: 82%;
   height: 94%;
   object-fit: contain;
-  object-position: center;
-  display: block;
-  filter: none;
   position: relative;
   z-index: 2;
 }
-
-
-
-.side-title {
-  position: absolute;
-  right: 45px;
-  top: 70px;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  font-size: 12px;
-  letter-spacing: 4px;
-  color: #777;
-  z-index: 8;
-}
-
-.side-title span:first-child {
-  color: white;
-  font-size: 11px;
-  font-weight: bold;
-}
-
-.side-title span:last-child {
-  color: #777;
-  font-size: 9px;
-  margin-top: 6px;
-}
-
-
-/* MENU */
 
 .quick-menu {
   position: absolute;
@@ -287,18 +246,6 @@ header {
   color: #777;
 }
 
-
-.side-number {
-  position: absolute;
-  right: -15px;
-  bottom: -60px;
-  font-size: 250px;
-  font-weight: bold;
-  color: #181818;
-  line-height: 1;
-}
-
-
 .section {
   min-height: 100vh;
   padding: 110px 8%;
@@ -324,7 +271,6 @@ header {
   color: #777;
   font-size: 13px;
 }
-
 
 .cards {
   display: grid;
@@ -365,6 +311,13 @@ header {
   background: white;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.output-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
 }
 
 .output-card img {
@@ -372,7 +325,6 @@ header {
   height: 220px;
   object-fit: cover;
   display: block;
-  cursor: pointer;
 }
 
 .no-picture {
@@ -386,7 +338,7 @@ header {
 }
 
 .output-info {
-  padding: 20px 20px 55px;
+  padding: 20px;
 }
 
 .output-info h3 {
@@ -396,27 +348,14 @@ header {
 .output-info p {
   color: #777;
   font-size: 13px;
-  line-height: 1.5;
 }
 
-.remove {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  background: white;
-  border: 1px solid #999;
-  padding: 7px 12px;
-  cursor: pointer;
-  font-size: 10px;
+.output-meta {
+  color: #888;
+  font-size: 11px;
+  line-height: 1.7;
+  margin-top: 12px;
 }
-
-.remove:hover {
-  background: #111;
-  color: white;
-}
-
-
-/* LABORATORY */
 
 .laboratory {
   background: #111;
@@ -446,7 +385,8 @@ header {
   border-color: #444;
 }
 
-.laboratory .output-info p {
+.laboratory .output-info p,
+.laboratory .output-meta {
   color: #999;
 }
 
@@ -454,6 +394,14 @@ header {
   background: #222;
 }
 
+.empty-message {
+  grid-column: 1 / -1;
+  border: 1px dashed #aaa;
+  padding: 50px 20px;
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+}
 
 .exam {
   background: #ddd;
@@ -495,7 +443,6 @@ header {
   font-size: 25px;
   text-align: right;
 }
-
 
 .modal {
   display: none;
@@ -563,11 +510,41 @@ header {
   cursor: pointer;
 }
 
+.detail-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #eee;
+}
+
+.detail-no-image {
+  height: 150px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.details p {
+  margin: 12px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.remove-detail {
+  background: #8b0000;
+}
 
 .exam-output {
   border: 1px solid #ccc;
   margin-bottom: 15px;
   background: white;
+  padding-bottom: 15px;
+  cursor: pointer;
 }
 
 .exam-output img {
@@ -575,12 +552,16 @@ header {
   max-height: 250px;
   object-fit: cover;
   display: block;
-  cursor: pointer;
-  transition: .2s;
 }
 
-.exam-output img:hover {
-  opacity: .8;
+.exam-output h4 {
+  padding: 12px 15px 5px;
+}
+
+.exam-output p {
+  padding: 0 15px;
+  color: #777;
+  font-size: 12px;
 }
 
 .exam-no-picture {
@@ -593,14 +574,13 @@ header {
 }
 
 .exam-remove {
-  width: 100%;
-  padding: 8px;
+  margin: 12px 15px 0;
+  padding: 8px 12px;
   background: #111;
   color: white;
   border: none;
   cursor: pointer;
 }
-
 
 .image-viewer {
   display: none;
@@ -634,7 +614,6 @@ header {
   cursor: pointer;
 }
 
-
 footer {
   background: #111;
   color: white;
@@ -665,9 +644,15 @@ footer p {
   text-decoration: none;
 }
 
+.admin-only {
+  display: none;
+}
+
+body.admin-mode .admin-only {
+  display: flex;
+}
 
 @media (max-width: 1000px) {
-
   .home {
     grid-template-columns: 50% 50%;
   }
@@ -689,19 +674,9 @@ footer p {
     right: 20px;
     width: 190px;
   }
-
 }
 
 @media (max-width: 800px) {
-
-  header {
-    position: absolute;
-  }
-
-  .top-name {
-    display: none;
-  }
-
   .home {
     display: flex;
     flex-direction: column;
@@ -730,11 +705,6 @@ footer p {
     height: 390px;
   }
 
-  .side-title {
-    top: 30px;
-    right: 25px;
-  }
-
   .quick-menu {
     top: auto;
     bottom: 25px;
@@ -760,5 +730,4 @@ footer p {
     gap: 25px;
     text-align: center;
   }
-
 }
