@@ -55,7 +55,7 @@ course: "Cloud Computing",
 date: "2026-08-25",
 score: "75/100",
 description: "Overview and documentation for Laboratory Activity 1.",
-image: "images/lab1.png",
+image: "lab1.png",
 pdfUrl: "files/Estrante Labaratory.pdf"
 },
 {
@@ -65,7 +65,7 @@ course: "Cloud Computing",
 date: "2026-09-01",
 score: "90/100",
 description: "Overview and documentation for Laboratory Activity 2.",
-image: "images/lab2.png",
+image: "lab2.png",
 pdfUrl: "files/lab-Estrante(2).pdf"
 },
 {
@@ -75,7 +75,7 @@ course: "Cloud Computing",
 date: "2026-09-08",
 score: "95/100",
 description: "Screenshot output for Laboratory Activity 3.",
-image: "images/lab3.png"
+image: "lab3.png"
 }
 ];
 
@@ -95,7 +95,7 @@ let quizzes = JSON.parse(localStorage.getItem("quizzes")) || [
     date: "2026-08-24",
     score: "17/20",
     description: "Quiz 1 assessment for Cloud Computing.",
-    image: "images/quiz1.png"
+    image: "quiz1.png"
   }
 ];
 
