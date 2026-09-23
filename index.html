@@ -3,204 +3,627 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Chris Joseph A. Estrante</title>
+
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
 <header>
-<div class="logo">CJ<span>.</span></div>
-<button class="admin-login" onclick="openLogin()">ADMIN</button>
+
+<div class="logo">
+CJ<span>.</span>
+</div>
+
+<button class="admin-login" onclick="openLogin()">
+ADMIN
+</button>
+
 </header>
 
+
+<!-- ================= HOME ================= -->
+
 <section class="home" id="home">
+
 <div class="home-text">
-<p class="small-title">PERSONAL PORTFOLIO / 2026</p>
-<p class="hello">HELLO, I'M</p>
-<h1>Chris Joseph <span>A. Estrante</span></h1>
+
+<p class="small-title">
+PERSONAL PORTFOLIO / 2026
+</p>
+
+<p class="hello">
+HELLO, I'M
+</p>
+
+<h1>
+Chris Joseph <span>A. Estrante</span>
+</h1>
+
 <div class="line"></div>
-<h4>BSIT 3B</h4>
+
+<h4>
+BSIT 3B
+</h4>
+
 <p class="intro">
 Hi! I'm Chris Joseph A. Estrante, a BSIT 3B student.
 This portfolio contains my quizzes, laboratory works, and exam outputs as I continue learning and improving my IT skills.
 </p>
 
-<a href="#quiz" class="button">VIEW MY WORKS <span>↗</span></a>
+<a href="#quiz" class="button">
+VIEW MY WORKS <span>↗</span>
+</a>
 
 <div class="socials">
-<a href="https://www.facebook.com/chris.joseph.anonuevo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-<a href="mailto:chrisjosephestrante@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-<a href="https://github.com/cjaestrante-max" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+<a href="https://www.facebook.com/chris.joseph.anonuevo" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="mailto:chrisjosephestrante@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+<a href="https://github.com/cjaestrante-max" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+
 </div>
+
 </div>
+
 
 <div class="black-side">
+
 <div class="photo-area">
+
 <div class="photo-shape"></div>
-<img src="images/profile.png" alt="Chris Joseph A. Estrante">
+
+<img
+src="images/profile.png"
+alt="Chris Joseph A. Estrante"
+>
+
 </div>
+
 
 <div class="quick-menu">
+
 <a href="#quiz">
+
 <span>01</span>
-<div><b>QUIZ</b><small>ACTIVITIES</small></div>
+
+<div>
+<b>QUIZ</b>
+<small>ACTIVITIES</small>
+</div>
+
 <strong>↗</strong>
+
 </a>
+
 
 <a href="#laboratory">
+
 <span>02</span>
-<div><b>LABORATORY</b><small>WORKS & OUTPUTS</small></div>
+
+<div>
+<b>LABORATORY</b>
+<small>WORKS & OUTPUTS</small>
+</div>
+
 <strong>↗</strong>
+
 </a>
+
 
 <a href="#exam">
+
 <span>03</span>
-<div><b>EXAM</b><small>PRELIMS / MIDTERM / FINALS</small></div>
+
+<div>
+<b>EXAM</b>
+<small>PRELIMS / MIDTERM / FINALS</small>
+</div>
+
 <strong>↗</strong>
+
 </a>
+
 </div>
+
 </div>
+
 </section>
+
+
+<!-- ================= QUIZ ================= -->
 
 <section class="section" id="quiz">
-<p class="number">01 / ACADEMIC</p>
-<h2>My <span>Quiz</span></h2>
-<p class="desc">Click a quiz to see its details.</p>
+
+<p class="number">
+01 / ACADEMIC
+</p>
+
+<h2>
+My <span>Quiz</span>
+</h2>
+
+<p class="desc">
+Click a quiz to see its details.
+</p>
 
 <div class="cards" id="quizList"></div>
+
 </section>
+
+
+<!-- ================= LABORATORY ================= -->
 
 <section class="section laboratory" id="laboratory">
-<p class="number">02 / OUTPUTS</p>
-<h2>Laboratory <span>Works</span></h2>
-<p class="desc">Click a laboratory work to see its details or open its PDF.</p>
+
+<p class="number">
+02 / OUTPUTS
+</p>
+
+<h2>
+Laboratory <span>Works</span>
+</h2>
+
+<p class="desc">
+Click a laboratory work to see its details or open its PDF.
+</p>
 
 <div class="cards" id="labList"></div>
+
 </section>
+
+
+<!-- ================= EXAM ================= -->
 
 <section class="section exam" id="exam">
-<p class="number">03 / EXAMINATION</p>
-<h2>My <span>Exams</span></h2>
-<p class="desc">Prelims, Midterm and Finals examination outputs.</p>
+
+<p class="number">
+03 / EXAMINATION
+</p>
+
+<h2>
+My <span>Exams</span>
+</h2>
+
+<p class="desc">
+Prelims, Midterm and Finals examination outputs.
+</p>
+
 
 <div class="exam-list">
-<div class="exam-card" onclick="openExam('Prelims')">
+
+
+<!-- PRELIMS -->
+
+<div
+class="exam-card"
+onclick="openExam('Prelims')"
+>
+
 <b>01</b>
-<div><small>FIRST PERIOD</small><h3>PRELIMS</h3></div>
-<strong>→</strong>
+
+<div>
+
+<small>
+FIRST PERIOD
+</small>
+
+<h3>
+PRELIMS
+</h3>
+
 </div>
 
-<div class="exam-card" onclick="openExam('Midterm')">
+<strong>
+→
+</strong>
+
+</div>
+
+
+<!-- MIDTERM -->
+
+<div
+class="exam-card"
+onclick="openExam('Midterm')"
+>
+
 <b>02</b>
-<div><small>SECOND PERIOD</small><h3>MIDTERM</h3></div>
-<strong>→</strong>
+
+<div>
+
+<small>
+SECOND PERIOD
+</small>
+
+<h3>
+MIDTERM
+</h3>
+
 </div>
 
-<div class="exam-card" onclick="openExam('Finals')">
+<strong>
+→
+</strong>
+
+</div>
+
+
+<!-- FINALS -->
+
+<div
+class="exam-card"
+onclick="openExam('Finals')"
+>
+
 <b>03</b>
-<div><small>FINAL PERIOD</small><h3>FINALS</h3></div>
-<strong>→</strong>
+
+<div>
+
+<small>
+FINAL PERIOD
+</small>
+
+<h3>
+FINALS
+</h3>
+
 </div>
+
+<strong>
+→
+</strong>
+
 </div>
+
+
+</div>
+
 </section>
 
+
+<!-- ================= ADMIN LOGIN ================= -->
+
 <div class="modal" id="loginModal">
+
 <div class="form-box">
-<button class="close" onclick="closeLogin()">×</button>
-<p>ADMIN</p>
-<h2>Admin Login</h2>
 
-<label>Password</label>
-<input type="password" id="adminPassword" placeholder="Enter password">
+<button
+class="close"
+onclick="closeLogin()"
+>
+×
+</button>
 
-<button class="add-btn" onclick="loginAdmin()">LOGIN</button>
+<p>
+ADMIN
+</p>
+
+<h2>
+Admin Login
+</h2>
+
+<label>
+Password
+</label>
+
+<input
+type="password"
+id="adminPassword"
+placeholder="Enter password"
+>
+
+<button
+class="add-btn"
+onclick="loginAdmin()"
+>
+LOGIN
+</button>
+
 </div>
+
 </div>
+
+
+<!-- ================= QUIZ / LAB FORM ================= -->
 
 <div class="modal" id="form">
+
 <div class="form-box">
-<button class="close" onclick="closeForm()">×</button>
 
-<p id="formType">QUIZ</p>
-<h2 id="formTitle">Add Quiz</h2>
+<button
+class="close"
+onclick="closeForm()"
+>
+×
+</button>
 
-<label>Picture / Screenshot</label>
-<input type="file" id="picture" accept="image/*">
 
-<label>Title</label>
-<input type="text" id="title" placeholder="Example: Quiz 1">
+<p id="formType">
+QUIZ
+</p>
 
-<label>Course</label>
-<input type="text" id="course" placeholder="Example: Cloud Computing">
 
-<label>Date Submission</label>
-<input type="date" id="submissionDate">
+<h2 id="formTitle">
+Add Quiz
+</h2>
 
-<label>Score</label>
-<input type="text" id="score" placeholder="Example: 17/20">
 
-<label>Overview</label>
-<textarea id="description" placeholder="Write something about your output"></textarea>
+<label>
+Picture / Screenshot
+</label>
 
-<button class="add-btn" onclick="addOutput()">ADD OUTPUT</button>
+<input
+type="file"
+id="picture"
+accept="image/*"
+>
+
+
+<label>
+Title
+</label>
+
+<input
+type="text"
+id="title"
+placeholder="Example: Quiz 1"
+>
+
+
+<label>
+Course
+</label>
+
+<input
+type="text"
+id="course"
+placeholder="Example: Cloud Computing"
+>
+
+
+<label>
+Date Submission
+</label>
+
+<input
+type="date"
+id="submissionDate"
+>
+
+
+<label>
+Score
+</label>
+
+<input
+type="text"
+id="score"
+placeholder="Example: 17/20"
+>
+
+
+<label>
+Overview
+</label>
+
+<textarea
+id="description"
+placeholder="Write something about your output"
+></textarea>
+
+
+<button
+class="add-btn"
+onclick="addOutput()"
+>
+ADD OUTPUT
+</button>
+
 </div>
+
 </div>
+
+
+<!-- ================= EXAM MODAL ================= -->
 
 <div class="modal" id="examForm">
-<div class="form-box">
-<button class="close" onclick="closeExam()">×</button>
 
-<p>EXAMINATION</p>
-<h2 id="examTitle">PRELIMS</h2>
+<div class="form-box">
+
+<button
+class="close"
+onclick="closeExam()"
+>
+×
+</button>
+
+
+<p>
+EXAMINATION
+</p>
+
+
+<h2 id="examTitle">
+PRELIMS
+</h2>
+
+
+<!-- Exam outputs will appear here -->
 
 <div id="examList"></div>
 
-<button class="add-btn admin-only" id="examAddButton" onclick="addExam()">+ ADD EXAM OUTPUT</button>
 
-<input type="file" id="examPicture" accept="image/*" hidden>
+<!-- Hidden image input for exam -->
+
+<input
+type="file"
+id="examPicture"
+accept="image/*"
+hidden
+>
+
 </div>
+
 </div>
+
+
+<!-- ================= DETAILS MODAL ================= -->
 
 <div class="modal" id="detailModal">
-<div class="form-box detail-box">
-<button class="close" onclick="closeDetails()">×</button>
 
-<p id="detailType">QUIZ</p>
-<h2 id="detailTitle">Quiz 1</h2>
+<div class="form-box detail-box">
+
+<button
+class="close"
+onclick="closeDetails()"
+>
+×
+</button>
+
+
+<p id="detailType">
+QUIZ
+</p>
+
+
+<h2 id="detailTitle">
+Quiz 1
+</h2>
+
 
 <div id="detailImageContainer"></div>
 
+
 <div class="details">
-<p><b>Course:</b> <span id="detailCourse"></span></p>
-<p><b>Date Submission:</b> <span id="detailDate"></span></p>
-<p><b>Score:</b> <span id="detailScore"></span></p>
-<p><b>Overview:</b> <span id="detailDescription"></span></p>
-<p id="detailPdfContainer" style="display: none; margin-top: 10px;"></p>
+
+<p>
+<b>Course:</b>
+<span id="detailCourse"></span>
+</p>
+
+
+<p>
+<b>Date Submission:</b>
+<span id="detailDate"></span>
+</p>
+
+
+<p>
+<b>Score:</b>
+<span id="detailScore"></span>
+</p>
+
+
+<p>
+<b>Overview:</b>
+<span id="detailDescription"></span>
+</p>
+
+
+<p
+id="detailPdfContainer"
+style="display: none; margin-top: 10px;"
+></p>
+
 </div>
 
-<button class="add-btn remove-detail" id="detailRemove" onclick="deleteCurrentOutput()">REMOVE</button>
-</div>
+
+<button
+class="add-btn remove-detail"
+id="detailRemove"
+onclick="deleteCurrentOutput()"
+>
+REMOVE
+</button>
+
 </div>
 
-<div class="image-viewer" id="imageViewer" onclick="closeImage()">
-<button class="viewer-close" onclick="closeImage()">×</button>
-<img id="bigImage" src="" alt="Full Output">
 </div>
+
+
+<!-- ================= IMAGE VIEWER ================= -->
+
+<div
+class="image-viewer"
+id="imageViewer"
+onclick="closeImage()"
+>
+
+<button
+class="viewer-close"
+onclick="closeImage()"
+>
+×
+</button>
+
+<img
+id="bigImage"
+src=""
+alt="Full Output"
+>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
+
 <div>
-<h3>Chris Joseph A. Estrante</h3>
-<p>BSIT 3B | Student Portfolio</p>
+
+<h3>
+Chris Joseph A. Estrante
+</h3>
+
+<p>
+BSIT 3B | Student Portfolio
+</p>
+
 </div>
+
 
 <div class="footer-socials">
-<a href="https://www.facebook.com/chris.joseph.anonuevo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-<a href="mailto:chrisjosephestrante@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-<a href="https://github.com/cjaestrante-max" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+<a
+href="https://www.facebook.com/chris.joseph.anonuevo"
+target="_blank"
+>
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+
+<a href="mailto:chrisjosephestrante@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+
+<a
+href="https://github.com/cjaestrante-max"
+target="_blank"
+>
+<i class="fa-brands fa-github"></i>
+</a>
+
 </div>
+
 </footer>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>
