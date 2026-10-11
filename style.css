@@ -1110,3 +1110,21 @@ body.admin-mode .admin-only {
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .profile-img, 
+  .avatar-container, 
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    margin: 0 auto !important;
+  }
+
+  .main-container,
+  .hero-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
