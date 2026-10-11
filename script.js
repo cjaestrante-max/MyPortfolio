@@ -1,4 +1,3 @@
-
 let isAdmin = false;
 let currentType = "";
 let currentExam = "";
@@ -188,6 +187,9 @@ const ADMIN_PASSWORD = "CJ2026";
    ========================= */
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Tiyaking nasa pinaka-itaas (Homepage/Hero) sa simula pa lang
+    window.scrollTo(0, 0);
+
     // 3-Second High-Tech Glassmorphism Splash Screen Loader & Percentage Counter
     let percentCounter = 0;
     const percentEl = document.getElementById("splashPercent");
@@ -206,6 +208,8 @@ document.addEventListener("DOMContentLoaded", function () {
             splash.style.opacity = "0";
             splash.style.visibility = "hidden";
         }
+        // Siguraduhing nananatili sa pinaka-itaas (Homepage) pagkatago ng Splash Screen
+        window.scrollTo(0, 0);
     }, 3000);
 
     renderProjects(defaultProjects);
