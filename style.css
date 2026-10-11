@@ -1111,20 +1111,47 @@ body.admin-mode .admin-only {
   }
 }
 
-@media (max-width: 768px) {
-  .profile-img, 
-  .avatar-container, 
-  img {
-    max-width: 100% !important;
-    height: auto !important;
+
+@media screen and (max-width: 768px) {
+  /* Prevent elements from overlapping vertically */
+  .hero-section,
+  .profile-container,
+  .avatar-wrapper,
+  .profile-card {
     position: relative !important;
-    margin: 0 auto !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 auto 30px auto !important;
+    height: auto !important;
+    max-width: 280px !important;
+    float: none !important;
   }
 
-  .main-container,
-  .hero-section {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+  .profile-img,
+  .profile-container img {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 250px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    top: auto !important;
+  }
+
+ 
+  .menu-container,
+  .nav-links,
+  .projects-list {
+    position: relative !important;
+    clear: both !important;
+    margin-top: 20px !important;
+    z-index: 10 !important;
+  }
+
+ 
+  .frame-bg,
+  .photo-frame {
+    display: none !important;
   }
 }
